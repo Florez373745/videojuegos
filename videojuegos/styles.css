@@ -1,0 +1,196 @@
+/* Estilos generales */
+:root {
+  --primary-color: #ffffff; /* Texto blanco para mejor contraste */
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --light-color: #ecf0f1;
+  --dark-color: #2c3e50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC5FHUckbqjS4GtR0zEw7L4_mbUDjuN_ZAAg&s') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--primary-color);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Eliminamos la capa semi-transparente anterior */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navbar con fondo semi-transparente */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--secondary-color);
+}
+
+/* Secciones principales con fondo semi-transparente */
+.hero, .api-header {
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
+
+.hero h1, .api-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p, .api-header p {
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Tarjetas con fondo semi-transparente */
+.feature-card, .game-card, .news-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover, .game-card:hover, .news-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card img, .game-card img, .news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.game-info, .news-content {
+  padding: 1.5rem;
+}
+
+.game-info h3, .news-content h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.game-info p, .news-content p {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.rating {
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+.news-source {
+  font-size: 0.8rem;
+  color: var(--accent-color);
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.6rem 1.3rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Grids */
+.games-grid, .news-grid, .features {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    margin-top: 1rem;
+  }
+  
+  .nav-links li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .hero h1, .api-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .games-grid, .news-grid, .features {
+    grid-template-columns: 1fr;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+}
