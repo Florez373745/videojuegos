@@ -1,117 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Juegos - GameHub</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juegos Populares Entre Los Gamers</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">GameHub</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="api1.html">Top Juegos</a></li>
-            <li><a href="api2.html">Noticias</a></li>
-            <li><a href="api3.html">Juegos Gratis</a></li>
-        </ul>
-    </nav>
-
-    <header class="api-header">
-        <h1>Top Juegos del Momento</h1>
-        <p>Los juegos mejor valorados según la comunidad</p>
-    </header>
-
-    <main class="container">
-        <div class="games-grid">
-            <div class="game-card">
-                <img src="https://cdn-l-thewitcher.cdprojektred.com/meta/TW3NG_thumbnail_en.png" alt="The Witcher 3">
-                <div class="game-info">
-                    <h3>The Witcher 3: Wild Hunt</h3>
-                    <p><strong>Plataformas:</strong> PC, PlayStation, Xbox, Nintendo Switch</p>
-                    <p><strong>Género:</strong> RPG, Aventura</p>
-                    <p><strong>Lanzamiento:</strong> 2015-05-18</p>
-                    <p class="rating">⭐ 4.8/5 (1.2M votos)</p>
-                    <div class="game-description">
-                        <p>Embárcate en una épica aventura como Geralt de Rivia, un cazador de monstruos profesional, en este galardonado RPG de mundo abierto. Con una narrativa profunda, combate táctico y un mundo lleno de decisiones morales complejas, The Witcher 3 establece un nuevo estándar para los juegos de rol.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="game-card">
-                <img src="https://image.api.playstation.com/vulcan/img/rnd/202011/1215/WyHa1BM3ISDVqYSEUMB9VZJs.png?w=440" alt="Red Dead Redemption 2">
-                <div class="game-info">
-                    <h3>Red Dead Redemption 2</h3>
-                    <p><strong>Plataformas:</strong> PC, PlayStation, Xbox</p>
-                    <p><strong>Género:</strong> Acción-Aventura</p>
-                    <p><strong>Lanzamiento:</strong> 2018-10-26</p>
-                    <p class="rating">⭐ 4.7/5 (890K votos)</p>
-                    <div class="game-description">
-                        <p>Vive la historia de Arthur Morgan y la banda de Van der Linde en este impresionante western que redefine el realismo en videojuegos. Con un mundo abierto increíblemente detallado, sistemas de supervivencia profundos y una narrativa emocionante, RDR2 te transporta al salvaje oeste como ningún otro juego.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="game-card">
-                <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2531310/94b5d8b3165a6fe592e406054b08a2dd24e2f848/capsule_616x353.jpg?t=1746152571" alt="The Last of Us Part II">
-                <div class="game-info">
-                    <h3>The Last of Us Part II</h3>
-                    <p><strong>Plataformas:</strong> PlayStation</p>
-                    <p><strong>Género:</strong> Acción-Aventura</p>
-                    <p><strong>Lanzamiento:</strong> 2020-06-19</p>
-                    <p class="rating">⭐ 4.6/5 (750K votos)</p>
-                    <div class="game-description">
-                        <p>Una experiencia emocionalmente intensa que continúa la historia de Ellie en un mundo post-apocalíptico devastado. Con una jugabilidad mejorada, inteligencia artificial avanzada y una narrativa audaz que explora temas de venganza y redención, este juego establece nuevos estándares narrativos en el medio.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="game-card">
-                <img src="https://www.cyberpunk.net/build/images/social-thumbnail-en-ddcf4d23.jpg" alt="Cyberpunk 2077">
-                <div class="game-info">
-                    <h3>Cyberpunk 2077</h3>
-                    <p><strong>Plataformas:</strong> PC, PlayStation, Xbox</p>
-                    <p><strong>Género:</strong> RPG, Acción</p>
-                    <p><strong>Lanzamiento:</strong> 2020-12-10</p>
-                    <p class="rating">⭐ 4.2/5 (680K votos)</p>
-                    <div class="game-description">
-                        <p>Sumérgete en Night City, un megalópolis obsesionada con el poder, la modificación corporal y el glamour. Como V, un mercenario en busca de un implante único que concede la inmortalidad, navegarás por una compleja red de decisiones que afectarán tu historia en este RPG futurista lleno de estilo.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="game-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Ak5rZu6u-Tjj5eK8GgWK5L71c-ZWMZhKuQ&s" alt="Ghost of Tsushima">
-                <div class="game-info">
-                    <h3>Ghost of Tsushima</h3>
-                    <p><strong>Plataformas:</strong> PlayStation</p>
-                    <p><strong>Género:</strong> Acción-Aventura</p>
-                    <p><strong>Lanzamiento:</strong> 2020-07-17</p>
-                    <p class="rating">⭐ 4.5/5 (620K votos)</p>
-                    <div class="game-description">
-                        <p>Conviértete en Jin Sakai, un samurái que debe abandonar su código de honor para proteger a su pueblo de la invasión mongola. Este hermoso juego de mundo abierto, inspirado en el cine samurái clásico, ofrece combate con espadas intenso, exploración serena y una narrativa conmovedora sobre sacrificio y tradición.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="game-card">
-                <img src="https://store-images.s-microsoft.com/image/apps.30323.14537704372270848.6ecb6038-5426-409a-8660-158d1eb64fb0.08703491-f5dc-4b00-bca6-486b7b293c17?q=90&w=480&h=270" alt="Elden Ring">
-                <div class="game-info">
-                    <h3>Elden Ring</h3>
-                    <p><strong>Plataformas:</strong> PC, PlayStation, Xbox</p>
-                    <p><strong>Género:</strong> RPG, Acción</p>
-                    <p><strong>Lanzamiento:</strong> 2022-02-25</p>
-                    <p class="rating">⭐ 4.9/5 (1.5M votos)</p>
-                    <div class="game-description">
-                        <p>Una obra maestra de FromSoftware que combina la desafiante jugabilidad de los Souls con un vasto mundo abierto diseñado en colaboración con George R.R. Martin. Explora las Tierras Intermedias, descubre secretos ocultos y enfréntate a jefes épicos en este RPG oscuro y atmosférico que redefine el género.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 GameHub. Todos los derechos reservados.</p>
-    </footer>
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav class="navbar">
+    <a href="index.html">Inicio</a>
+    <a href="api1.html">Juegos Populares</a>
+    <a href="api2.html">Ofertas</a>
+    <a href="api3.html">Gameplays</a>
+  </nav>
+  <main class="container">
+    <h2>Juegos Populares</h2>
+    <div id="games"></div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
